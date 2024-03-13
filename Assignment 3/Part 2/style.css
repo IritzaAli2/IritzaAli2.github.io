@@ -1,0 +1,29 @@
+html {
+  font-family: sans-serif;
+}
+
+/* Your CSS below here */
+.verycoolbox {
+  width: 200px; /* Setting an reasonable width for the box */
+  height: 200px; /* Setting an reasonable height for the box */
+  line-height: 200px; /* Centering the text vertically */
+  text-align: center; /* Centering the text horizontally */
+  font-size: 1.125rem; /* Increase font size to 18px */
+  background-color: #3498db; /* Background colour*/
+  color: #fff; /* The text will be in white colour */
+  text-shadow: 1px 1px 0px #000; /* Creating an black text-shadow */
+  border-radius: 8px; /* Establishing a border radius */
+  border: 1px solid #297fb8; /* Creating the border to be 1px solid, making the colour a little bit darker than the background colour*/
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Creating an standard box shadow */
+
+  /* Box-Shadows to create an 3D effect */
+  box-shadow:
+    inset 3px 3px 5px rgba(255, 255, 255, 0.5), /* Semi-transparent white near the top left */
+    inset -3px -3px 5px rgba(0, 0, 0, 0.5), /* Semi-transparent black near the bottom right */
+    0px 0px 10px rgba(0, 0, 0, 0.2); /* Standard box shadow for a raised look */
+
+  /* Linear gradient toward the bottom right corner */
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0.2) 100%);
+}
+
+

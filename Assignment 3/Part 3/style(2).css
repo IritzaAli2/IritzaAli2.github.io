@@ -1,0 +1,168 @@
+
+
+@font-face {
+  font-family: "capsuularegular";
+  src: url("fonts/cagliostro-capsuula-generated/capsuula-webfont.woff2")
+      format("woff2"),
+    url("fonts/cagliostro-capsuula-generated/capsuula-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "cagliostroregular";
+  src: url("fonts/cagliostro-capsuula-generated/cagliostro-regular-webfont.woff2")
+      format("woff2"),
+    url("fonts/cagliostro-capsuula-generated/cagliostro-regular-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* General setup */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header,
+section,
+aside,
+nav,
+footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header,
+footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+
+html {
+  font-size: 10px; /*Setting the size of the font*/
+  letter-spacing: 1.5px; /* Setting the spacing between the letters */
+  word-spacing: 1.5px; /*Gave body text some word-spacing*/
+}
+
+h1,
+h2 {
+  font-family: "cagliostroregular"; /* Added font family to heading elements*/
+  font-size: 3rem; /*Added rem font size to heading elements*/
+}
+
+p,
+a,
+ul,
+ol,
+li {
+  font-family: "capsuularegular"; /* Added font family to other body elements*/
+  font-size: 2rem; /*Added rem font size to other body elements*/
+  line-height: 1.5; /*Gave body text a line-height of 1.5*/
+}
+
+h1 {
+  text-align: center; /*Centered top level heading on the page*/
+}
+
+h2 + p {
+  text-indent: 20px; /*Gave the first paragraph after each heading in the <section> a little bit of text-indentation of 20px.*/
+}
+
+/*Links Styling*/
+
+a {
+  text-decoration: underline; /*Make links underlined by default*/
+  outline: none; /*Removed the default focus outline from ALL the links on the page.*/
+}
+
+a:link {
+  color: #1b1bb8; /*Gave unvisited links color*/
+}
+
+a:visited {
+  color: #a66; /*Added color to the visited state*/
+}
+
+a:focus {
+  background: rgba(170, 102, 102, 0.4); /*Added color to the focus state*/
+  text-decoration: none; /*Make links-underline disappear on focus*/
+}
+
+a:hover {
+  background: rgba(170, 102, 102, 0.4); /*Added color to the hover state*/
+  text-decoration: none; /*Make links-underline disappear on hover*/
+}
+
+a:active {
+  background: #a66; /*Gave active state a background color to make it noticeable*/
+}
+
+/*Added external link icon to external links*/
+
+a[href*="http"] {
+  background: url("icon/external-link-52.png") no-repeat 100% 0;
+  background-size: 18px 18px;
+  padding-right: 20px;
+}
+
+/*Added list-style-type of square to the ul and lower-alpha to ol*/
+
+ul {
+  list-style-type: square;
+}
+
+ol {
+  list-style-type: lower-alpha;
+}
+
+/*navigation menu styling*/
+
+nav li {
+  list-style-type: none;
+}
+
+nav a {
+  outline: none;
+  text-decoration: none;
+  border: 1px solid #a66;
+  padding: 2px;
+  display: block;
+  width: 80%;
+  padding: 20%, 15%;
+  text-align: center;
+  margin-bottom: 10%;
+  line-height: 2;
+}
